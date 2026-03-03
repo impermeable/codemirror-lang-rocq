@@ -1,0 +1,37 @@
+{
+  "name": "@impermeable/codemirror-lang-rocq",
+  "version": "1.0.0",
+  "description": "CodeMirror language support for the Rocq language",
+  "homepage": "https://github.com/impermeable/codemirror-lang-rocq#readme",
+  "bugs": {
+    "url": "https://github.com/impermeable/codemirror-lang-rocq/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impermeable/codemirror-lang-rocq.git"
+  },
+  "license": "MIT",
+  "author": "impermeable",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "esbuild": "node esbuild.mjs --release",
+    "gen-types": "npx tsc",
+    "build": "npm run gen-types && npm run esbuild",
+    "lint": "npx eslint .",
+    "lint-fix": "npx eslint . --fix"
+  },
+  "dependencies": {
+    "@lezer/highlight": "^1.2.3"
+  },
+  "peerDependencies": {
+    "@codemirror/language": "6.12.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "esbuild": "^0.27.2",
+    "eslint": "^9.39.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.52.0"
+  }
+}
