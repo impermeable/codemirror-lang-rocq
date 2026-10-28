@@ -26,16 +26,16 @@
     "lint-fix": "npx eslint . --fix"
   },
   "dependencies": {
-    "@lezer/highlight": "^1.2.3"
+    "@lezer/highlight": "^1.2.5"
   },
   "peerDependencies": {
-    "@codemirror/language": "^6.12.2"
+    "@codemirror/language": "^6.13.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.2",
-    "esbuild": "^0.27.2",
-    "eslint": "^9.39.2",
+    "@eslint/js": "^10.0.1",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.13.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.52.0"
+    "typescript-eslint": "^8.72.0"
   }
 }
